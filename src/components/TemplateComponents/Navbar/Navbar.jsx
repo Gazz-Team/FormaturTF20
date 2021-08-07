@@ -4,21 +4,21 @@ import {NavLink, useLocation} from 'react-router-dom'
 import './Navbar.css'
 import {AllOpenRoutes} from '../../../routes/routes';
 
+import MenuIcon from '@material-ui/icons/Menu';
+import CloseIcon from '@material-ui/icons/Close';
+
 const AllOpenRoutesPath = AllOpenRoutes.map(route=>route.path)
 
 const Navbar = () => {
-    const location = useLocation();
 
     const [click, setClick] = useState(false);
 
     const handleClick = () => setClick(!click)
-
-    if(AllOpenRoutesPath.includes(location.pathname)){
         return (
                 <nav className="navbar">
                     <div className="">
                         <NavLink exact to='/' className='nav-logo'>
-                            EduChallenge
+                            Pemilu Swashbuckler
                         </NavLink>
                     </div>
     
@@ -33,12 +33,14 @@ const Navbar = () => {
                             }
                         </ul>
                         <div className="nav-icon"  onClick={handleClick}>
-                            <i className={click? 'fas fa-times' : 'fas fa-bars'}></i>
+                            {/* <i className={click? <MenuIcon />: <CloseIcon />}></i> */}
+                            {
+                                click ? <CloseIcon /> : <MenuIcon />
+                            }
                         </div>
                     </div>
                 </nav>
         );
-    }
     return <></>
 }
 

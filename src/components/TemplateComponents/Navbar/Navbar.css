@@ -80,9 +80,10 @@ a.nav-links:hover{
         border-top: 1px solid cornflowerblue;
         position: absolute;
         top: 80px;
-        left: -110%;
+        left: -110%; 
         opacity: 1;
         transition: all 0.5s ease;
+
     }
 
     .nav-menu.active {
@@ -106,7 +107,7 @@ a.nav-links:hover{
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor: pointer;
-        color: #000;
+        color: #3E6BAC;
       }
       a.nav-logo{
           display: none;

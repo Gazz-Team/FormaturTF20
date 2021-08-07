@@ -1,12 +1,37 @@
 import React from 'react';
-import ChallengeCard from '../../components/Cards/ChallengeCard'
-const Landing = () => {
-    return (
-        <div>
-            Hello from Landing
-            <ChallengeCard />
-        </div>
-    );
+import './Landing.css';
+import {useMediaQuery} from 'react-responsive'
+// import LandingPagePict from '../../icons/landingpage_pict.svg';
+import LandingPageFullscreen from '../../components/LandingPageComponents/fullscreen/LandingPageFullscreen';
+import LandingPageMinimalized from '../../components/LandingPageComponents/minimalized/LandingPageMinimalized';
+// import aasd from '../../'
+const useScreen = () => {
+    const isMinimalized = useMediaQuery({maxWidth:600});
+    if(isMinimalized){
+        return "minimalized"
+    }
+    return "fullscreen"
 }
 
-export default Landing;
+const Landing = () => {
+    var layout;
+    const screenType = useScreen();
+    if (screenType==="minimalized"){
+        layout = (
+            
+            <LandingPageMinimalized/>
+        )
+    } else {
+        layout = (
+            <LandingPageFullscreen/>
+        )
+    }
+
+    return (
+        <div>
+            {layout}
+        </div>
+    )
+}
+export default Landing
+

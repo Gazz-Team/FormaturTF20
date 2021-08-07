@@ -5,6 +5,12 @@ import Login from "../pages/Auth/Login"
 import About from "../pages/About/About"
 import Landing from "../pages/Landing/Landing"
 import Contact from "../pages/Contact/Contact"
+
+import Statistic from '../pages/Statistic/Statistic'
+import Profile from '../pages/Profile/Profile'
+import Vote from '../pages/Vote/Vote'
+
+
 // import Creative from "../pages/Creative/Creative"
 // import Professional from "../pages/Professional/Professional"
 // import Explore from "../pages/Explore/Explore"
@@ -34,6 +40,9 @@ export const LOGIN_PAGE = route('Login', '/login', Login)
 export const LANDING_PAGE = route('Home', '/', Landing)
 export const ABOUT_PAGE = route('About us', '/about', About)
 export const CONTACT_PAGE = route('Contact us', '/contact', Contact)
+export const STATISTIC_PAGE = route('Statistic', '/statistic', Statistic)
+export const PROFILE_PAGE = route('Profile', '/profile', Profile)
+export const VOTE_PAGE = route('Vote', '/vote', Vote)
 
 
 // yang gak bisa diakses tanpa authentication
@@ -65,7 +74,7 @@ export const AllOpenRoutes = [
 
 export const NavbarRoutes = [
     LANDING_PAGE,
-    ABOUT_PAGE,
-    CONTACT_PAGE,
-    LOGIN_PAGE,
+    STATISTIC_PAGE, 
+    PROFILE_PAGE,
+    VOTE_PAGE
 ]
