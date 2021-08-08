@@ -5,7 +5,7 @@ const CardDesc = () => {
   return (
     <div class="wrapper">
       <div class="profile-desc">
-        <h1>Halo teman teman</h1>
+        <h1>Sampurasun Akang Teteh</h1>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
