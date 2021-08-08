@@ -66,15 +66,14 @@ export const VOTE_PAGE = route('Vote', '/vote', Vote)
 
 export const AllOpenRoutes = [
     LANDING_PAGE,
-    LOGIN_PAGE,
-    SIGNUP_PAGE,
-    ABOUT_PAGE,
-    CONTACT_PAGE,
+    PROFILE_PAGE,
+    STATISTIC_PAGE, 
+    VOTE_PAGE
 ]
 
 export const NavbarRoutes = [
     LANDING_PAGE,
-    STATISTIC_PAGE, 
     PROFILE_PAGE,
+    STATISTIC_PAGE, 
     VOTE_PAGE
 ]
