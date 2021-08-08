@@ -13,15 +13,17 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        {/* <div className='navbar'>
+          <Navbar />
+        </div> */}
         {AllOpenRoutes.map(({path, component: Component})=>(
               <Route
               exact
               key={path}
               path={path}
               render={() => <Component />}
-            />
-            ))}
+            />  
+        ))}
       </Router>
     </div>
   );

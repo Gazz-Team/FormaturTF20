@@ -12,7 +12,7 @@ const CardProfile = () => {
 
             <div class="profile-card">
                 <div class="profile-header">
-                    <img src="https://i.imgur.com/X2oObC4.png" alt="" />
+                    {/* <img src="https://i.imgur.com/X2oObC4.png" alt="" /> */}
                 </div>
                 <div class="profile-body">
                         <div class="author-img">
@@ -25,7 +25,7 @@ const CardProfile = () => {
                                 home-made things and share to the world.
                         </p>
                         </div>
-                        {/* <div class="social-icon">
+                        <div class="social-icon">
                             <ul>
                                 <li>
                                     <a href="#">
@@ -43,7 +43,7 @@ const CardProfile = () => {
                                     </a>
                                 </li>
                             </ul>
-                        </div> */}
+                        </div>
                 </div>
             </div>
         </div>  

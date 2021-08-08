@@ -17,23 +17,26 @@ img{
     height: auto;
 }
 .wrapper{
-    width: 100%;
+    width: 80vw;
     height: 100vh;
 }
 .profile-card{
-    width: 400px;
+    width: 80vw;
     height: auto;
     text-align: center;
-    margin: 20px 10px;
+    margin: 20px auto;
     box-shadow:  0px 0px 18px #ccc;
 }
 .profile-card .profile-header{
-    height: 180px;
+    height: 20px;
+    width: 80vw;
+    z-index: 1;
 }
 
 .profile-card .profile-body{
     background-color: var(--white);
     padding: 20px 40px 40px 40px;
+    z-index: 20;
 }
 
 .profile-card .profile-body .author-img{
@@ -93,10 +96,3 @@ img{
  
    color:var(--white);
   }
-
-  
-@media screen and (max-width: 960px) {
-    .profile-card{
-
-    }
-    }
